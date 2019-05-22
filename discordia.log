@@ -1,0 +1,7 @@
+2019-05-22 11:40:50 | [INFO]    | Discordia 2.6.0
+2019-05-22 11:40:50 | [INFO]    | Connecting to Discord...
+2019-05-22 11:40:50 | [INFO]    | Authenticated as smallz-bot#7084
+2019-05-22 11:40:50 | [INFO]    | Launching shard 0 (1 out of 1)...
+2019-05-22 11:40:50 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2019-05-22 11:40:50 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-mnvz)
+2019-05-22 11:40:51 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-mnvz, discord-sessions-prd-1-26)
