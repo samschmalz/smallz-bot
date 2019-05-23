@@ -89,3 +89,45 @@
 2019-05-22 13:17:57 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
 2019-05-22 13:17:57 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-q0l2)
 2019-05-22 13:17:58 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-q0l2, discord-sessions-prd-1-19)
+2019-05-23 11:15:56 | [INFO]    | Discordia 2.6.0
+2019-05-23 11:15:56 | [INFO]    | Connecting to Discord...
+2019-05-23 11:15:56 | [INFO]    | Authenticated as smallz-bot#7084
+2019-05-23 11:15:57 | [INFO]    | Launching shard 0 (1 out of 1)...
+2019-05-23 11:15:57 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2019-05-23 11:15:57 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-b0bz)
+2019-05-23 11:15:59 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-b0bz, discord-sessions-prd-1-3)
+2019-05-23 11:16:59 | [INFO]    | Discordia 2.6.0
+2019-05-23 11:16:59 | [INFO]    | Connecting to Discord...
+2019-05-23 11:17:00 | [INFO]    | Authenticated as smallz-bot#7084
+2019-05-23 11:17:00 | [INFO]    | Launching shard 0 (1 out of 1)...
+2019-05-23 11:17:00 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2019-05-23 11:17:00 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-nnbg)
+2019-05-23 11:17:00 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-nnbg, discord-sessions-prd-1-12)
+2019-05-23 11:20:17 | [INFO]    | Discordia 2.6.0
+2019-05-23 11:20:17 | [INFO]    | Connecting to Discord...
+2019-05-23 11:20:17 | [INFO]    | Authenticated as smallz-bot#7084
+2019-05-23 11:20:17 | [INFO]    | Launching shard 0 (1 out of 1)...
+2019-05-23 11:20:17 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2019-05-23 11:20:17 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-q2vr)
+2019-05-23 11:20:18 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-q2vr, discord-sessions-prd-1-2)
+2019-05-23 11:22:50 | [INFO]    | Discordia 2.6.0
+2019-05-23 11:22:50 | [INFO]    | Connecting to Discord...
+2019-05-23 11:22:50 | [INFO]    | Authenticated as smallz-bot#7084
+2019-05-23 11:22:50 | [INFO]    | Launching shard 0 (1 out of 1)...
+2019-05-23 11:22:51 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2019-05-23 11:22:51 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-1kbg)
+2019-05-23 11:22:51 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-1kbg, discord-sessions-prd-1-13)
+2019-05-23 11:23:57 | [INFO]    | Discordia 2.6.0
+2019-05-23 11:23:57 | [INFO]    | Connecting to Discord...
+2019-05-23 11:23:57 | [INFO]    | Authenticated as smallz-bot#7084
+2019-05-23 11:23:57 | [INFO]    | Launching shard 0 (1 out of 1)...
+2019-05-23 11:23:58 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2019-05-23 11:23:58 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-6f44)
+2019-05-23 11:23:58 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-6f44, discord-sessions-prd-1-6)
+2019-05-23 11:31:29 | [INFO]    | Discordia 2.6.0
+2019-05-23 11:31:29 | [INFO]    | Connecting to Discord...
+2019-05-23 11:31:29 | [INFO]    | Authenticated as smallz-bot#7084
+2019-05-23 11:31:29 | [INFO]    | Launching shard 0 (1 out of 1)...
+2019-05-23 11:31:29 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2019-05-23 11:31:29 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-q0l2)
+2019-05-23 11:31:31 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-q0l2, discord-sessions-prd-1-26)
