@@ -24,8 +24,12 @@ client:on('messageCreate', function(message)
 
 	if (string.find(message.content, prefix.."beatit") == 1)
 	then
-		local rphrase = beatit.randphrase()
-		message.channel:send(rphrase)
+		message.channel:send(beatit.randphrase())
+	end
+
+	if (string.find(message.content, prefix.."ping") == 1)
+	then
+		message.channel:send("Pong!")
 	end
 end)
 
