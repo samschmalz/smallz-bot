@@ -24,6 +24,11 @@ client:on('messageCreate', function(message)
 		return
 	end
 
+	if (string.find(message.content, prefix.."help") == 1)
+	then
+		message.channel:send("current commands: help, beatit, ping, roll")
+	end
+
 	if (string.find(message.content, prefix.."beatit") == 1)
 	then
 		message.channel:send(beatit.randphrase())
@@ -32,6 +37,11 @@ client:on('messageCreate', function(message)
 	if (string.find(message.content, prefix.."ping") == 1)
 	then
 		message.channel:send("Pong!")
+	end
+
+	if (string.find(message.content, prefix.."roll") == 1)
+	then
+		message.channel:send("This function is not yet implemented")
 	end
 end)
 

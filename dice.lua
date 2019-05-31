@@ -9,6 +9,7 @@ end
 parsedice = function(input_string)
 	return nil
 end
+M.parsedice = parsedice
 
 roll = function()
 	return nil
