@@ -1,6 +1,8 @@
 local discordia = require('discordia')
 local client = discordia.Client()
+
 local beatit = require('beatit')
+local dice = require('dice')
 
 token_file = io.open("token.txt", "r")
 token = token_file:read()
