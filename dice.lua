@@ -5,7 +5,7 @@ local M = {}
 sum = function(arr)
 	local s = 0
 	for k,v in pairs(arr) do
-		sum = sum + v
+		s = s + v
 	end
 	return s
 end
