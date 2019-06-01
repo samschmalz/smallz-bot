@@ -3,6 +3,7 @@ local client = discordia.Client()
 
 local beatit = require('beatit')
 local dice = require('dice')
+local split = require('split')
 
 token_file = io.open("token.txt", "r")
 token = token_file:read()
@@ -41,7 +42,11 @@ client:on('messageCreate', function(message)
 
 	if (string.find(message.content, prefix.."roll") == 1)
 	then
-		message.channel:send("This function is not yet implemented")
+		if table.maxn(split.mysplit(message.content)) = 1 then
+			message.channel:send("Usage: ./roll <num>d<size> [+ <num>d<size>] [+modifiers], e.g. `./roll 1d20 + 1d4 + 3`")
+		else
+			message.channel:send("This function is not yet implemented")
+		end
 	end
 end)
 
