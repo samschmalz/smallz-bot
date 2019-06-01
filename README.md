@@ -3,8 +3,9 @@ A discord bot written in Lua
 
 Currently the bot has two functions:
 * help - briefly lists available commands
-* ping - responds with "Pong!"
+* about - provides a link to this git repo
 * beatit - gives a euphemism for beating off.  This was a request from a friend in a particular Discord server.
+* ping - responds with "Pong!"
 * roll - rolls a given set of dice with modifiers and extra dice
 
 The prefix for all commands is `./`, just like running a local command in your shell.

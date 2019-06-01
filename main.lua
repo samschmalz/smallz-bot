@@ -30,6 +30,11 @@ client:on('messageCreate', function(message)
 		message.channel:send("current commands: help, beatit, ping, roll")
 	end
 
+	if (string.find(message.content, prefix.."about") == 1)
+	then
+		message.channel:send("You can find the source code for this bot at https://www.github.com/samschmalz/smallz-bot")		
+	end 
+
 	if (string.find(message.content, prefix.."beatit") == 1)
 	then
 		message.channel:send(beatit.randphrase())
