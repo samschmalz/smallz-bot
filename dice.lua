@@ -54,13 +54,14 @@ roll = function(message_string)
 	for k,v in ipairs(vals["dice"]) do
 		r = rolldie(v)
 		if not r then return fail_string end
-		table.insert(values, r)
+		for x,roll in r do
+			table.insert(values, roll)
+		end
 	end
 	for l,w in ipairs(vals["mods"]) do
 		table.insert(values, w)
 	end
 
-	for k,v in ipairs(values) do print(v) end
 	result = table.concat(values, " + ").." = "..sum(values)
 	return result
 end
