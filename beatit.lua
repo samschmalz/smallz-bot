@@ -40,7 +40,7 @@ function randphrase()
 		noun = get_line(noun_file, math.random(noun_len))
 	end
 
-	return verb..noun	
+	return "One second, I'm "..verb..noun	
 end
 M.randphrase = randphrase
 
