@@ -32,12 +32,13 @@ parsedice = function(input_string)
 
 	for k,v in pairs(s) do
 		if tonumber(v) then
-			vals["mods"].insert(tonumber(v))
+			table.insert(vals["mods"],tonumber(v))
 		else if string.find(v, 'd') and table.maxn(split.mysplit(v, 'd')) == 2 then
-			vals["dice"].insert(v)
+			table.insert(vals["dice"],v)
 		end
 	end
 	return vals
+end
 end
 M.parsedice = parsedice
 
@@ -61,8 +62,8 @@ roll = function(message_string)
 
 	result = table.concat(values, " + ").." = "..sum(values)
 	return result
-		
 end
+
 M.roll = roll
 
 return M
