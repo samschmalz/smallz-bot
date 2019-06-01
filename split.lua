@@ -12,7 +12,11 @@ function mysplit(inputstr, sep)
         end
         return t
 end
-
 M.mysplit = mysplit
+
+function trim(s)
+	return (s:gsub("^%s*(.-)%s*$", "%1"))
+end
+M.trim = trim
 
 return M

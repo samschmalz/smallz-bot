@@ -45,7 +45,7 @@ client:on('messageCreate', function(message)
 		if table.maxn(split.mysplit(message.content)) = 1 then
 			message.channel:send("Usage: ./roll <num>d<size> [+ <num>d<size>] [+modifiers], e.g. `./roll 1d20 + 1d4 + 3`")
 		else
-			message.channel:send("This function is not yet implemented")
+			message.channel:send(dice.roll(message.content))
 		end
 	end
 end)

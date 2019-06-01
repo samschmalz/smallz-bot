@@ -2,13 +2,21 @@ local split = require("split")
 
 local M = {}
 
+sum = function(arr)
+	s = 0
+	for k,v in pairs(arr) do
+		sum = sum + v
+	end
+	return s
+end
+
 rolldie = function(die_string)
 	local r = {}
 	local values = split.mysplit(die_string, 'd')
 	local num = tonumber(values[1])
 	local val = tonumber(values[2])
 	if not num or not val then
-		return {"Please format dice rolles as <number>d<size>, e.g. 3d20"}
+		return nil
 	end
 	for i=1,num do
 		table.insert(r, math.random(val))
@@ -17,12 +25,41 @@ rolldie = function(die_string)
 end
 
 parsedice = function(input_string)
-	return nil
+	local vals = { "dice" = {}, "mods" = {} }
+	local s = split.mysplit(input_string, '+')
+
+	for k,v in pairs(s) do
+		if tonumber(v) then
+			vals["mods"].insert(tonumber(v))
+		else if string.find(v, 'd') and table.maxn(split.mysplit(v, 'd')) == 2 then
+			vals["dice"].insert(v)
+		end
+	end
+	return vals
 end
 M.parsedice = parsedice
 
-roll = function()
-	return nil
+roll = function(message_string)
+	local fail_string = "Please follow the format `./roll <num>d<size> [+ additional dice] [+ modifiers]`, e.g. `./roll 1d20 + 1d4 + 3`"
+	local cmd, input = message_string:match("^(%S+)%s+(.+)$")
+	if not cmd then	return fail_string end
+
+	local vals = parsedice(input)
+	if not vals then return fail_string end
+
+	values = {}
+	for k,v in pairs(vals["dice"]) do
+		r = rolldie(v)
+		if not r then return fail_string end
+		table.insert(values, r)
+	end
+	for l,w in pairs(vals["mods"]) do
+		table.insert(values, w)
+	end
+
+	result = table.concat(values, " + ").." = "..sum(values)
+	return result
+		
 end
 M.roll = roll
 
