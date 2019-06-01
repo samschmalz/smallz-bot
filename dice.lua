@@ -35,10 +35,10 @@ parsedice = function(input_string)
 			table.insert(vals["mods"],tonumber(v))
 		else if string.find(v, 'd') and table.maxn(split.mysplit(v, 'd')) == 2 then
 			table.insert(vals["dice"],v)
+			end
 		end
 	end
 	return vals
-end
 end
 M.parsedice = parsedice
 
