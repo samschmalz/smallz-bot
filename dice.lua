@@ -25,7 +25,9 @@ rolldie = function(die_string)
 end
 
 parsedice = function(input_string)
-	local vals = { "dice" = {}, "mods" = {} }
+	local vals = {}
+	vals["dice"] = {}
+	vals["mods"] = {}
 	local s = split.mysplit(input_string, '+')
 
 	for k,v in pairs(s) do

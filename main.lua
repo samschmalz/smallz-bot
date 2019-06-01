@@ -42,7 +42,7 @@ client:on('messageCreate', function(message)
 
 	if (string.find(message.content, prefix.."roll") == 1)
 	then
-		if table.maxn(split.mysplit(message.content)) = 1 then
+		if table.maxn(split.mysplit(message.content)) == 1 then
 			message.channel:send("Usage: ./roll <num>d<size> [+ <num>d<size>] [+modifiers], e.g. `./roll 1d20 + 1d4 + 3`")
 		else
 			message.channel:send(dice.roll(message.content))
