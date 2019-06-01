@@ -62,7 +62,7 @@ roll = function(message_string)
 		table.insert(values, w)
 	end
 
-	result = table.concat(values, " + ").." = "..sum(values)
+	local result = table.concat(values, " + ").." = "..sum(values)
 	return result
 end
 
