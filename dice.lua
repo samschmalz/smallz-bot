@@ -3,7 +3,7 @@ local split = require("split")
 local M = {}
 
 sum = function(arr)
-	s = 0
+	local s = 0
 	for k,v in pairs(arr) do
 		sum = sum + v
 	end
