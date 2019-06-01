@@ -54,7 +54,7 @@ roll = function(message_string)
 	for k,v in ipairs(vals["dice"]) do
 		r = rolldie(v)
 		if not r then return fail_string end
-		for x,roll in r do
+		for x,roll in ipairs(r) do
 			table.insert(values, roll)
 		end
 	end
