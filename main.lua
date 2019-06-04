@@ -9,10 +9,10 @@ token_file = io.open("token.txt", "r")
 token = token_file:read()
 io.close(token_file)
 
-client:run('Bot '..token)
 --Bot should be connected now
 
 client:on('ready', function()
+	client:setGame("./help")
 	print('Logged in!')
 end)
 
@@ -54,4 +54,6 @@ client:on('messageCreate', function(message)
 		end
 	end
 end)
+
+client:run('Bot '..token)
 
