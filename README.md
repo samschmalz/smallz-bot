@@ -1,7 +1,7 @@
 # smallz-bot
 A discord bot written in Lua
 
-Currently the bot has two functions:
+Currently the bot has these functions:
 * help - briefly lists available commands
 * about - provides a link to this git repo
 * beatit - gives a euphemism for beating off.  This was a request from a friend in a particular Discord server.
